@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page(2)</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        aside {
+            background-color: rgb(206, 201, 201);
+            display: flex;
+            height: 100%;
+
+        }
+
+        article {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box {
+            position: relative;
+        }
+
+        #edu_list {
+            margin: 40px;
+            background-color: white;
+            position: relative;
+            overflow: scroll;
+            border-radius: 15px;
+        }
+
+        #edu_list tr {
+            margin-bottom: 10px;
+        }
+
+        #edu_list th {
+            padding: 30px 120px;
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+
+        #box {
+            width: 70vw;
+            height: 70vh;
+            background-color: rgb(206, 201, 201);
+            border-radius: 20px;
+            margin-left: 150px;
+            position: relative;
+        }
+
+        #box table {
+            border-radius: 30px;
+            border-collapse: collapse;
+            background-color: white;
+            width: 40vw;
+            height: 10vh;
+            position: absolute;
+            top: 20%;
+            left: 17%;
+        }
+
+        #box table th:first-child {
+            border-right: 1px solid grey;
+        }
+
+        button {
+            width: 12vw;
+            height: 4vw;
+            border-radius: 50px;
+            position: absolute;
+            top: 60%;
+            left: 40%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <div id="edu_list">
+            <div>
+                <table>
+                    <tr>
+                        <th>xx학원</th>
+                    </tr>
+                    <tr>
+                        <th>yy학원</th>
+                    </tr>
+                    <tr>
+                        <th>zz학원</th>
+                    </tr>
+                    <tr>
+                        <th>xy학원</th>
+                    </tr>
+                    <tr>
+                        <th>yz학원</th>
+                    </tr>
+                    <tr>
+                        <th>zx학원</th>
+                    </tr>
+                    <tr>
+                        <th>xz학원</th>
+                    </tr>
+                    <tr>
+                        <th>xx학원</th>
+                    </tr>
+                    <tr>
+                        <th>yy학원</th>
+                    </tr>
+                    <tr>
+                        <th>zz학원</th>
+                    </tr>
+                    <tr>
+                        <th>xy학원</th>
+                    </tr>
+                    <tr>
+                        <th>yz학원</th>
+                    </tr>
+                    <tr>
+                        <th>zx학원</th>
+                    </tr>
+                    <tr>
+                        <th>xz학원</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </aside>
+    <article>
+        <div id="box">
+            <div id="table_box">
+                <table>
+                    <tr>
+                        <th>총액</th>
+                        <th colspan="2">470,000원 / 월</th>
+                    </tr>
+                </table>
+            </div>
+            <button>결제하기</button>
+        </div>
+    </article>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page(1)</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        aside {
+            background-color: rgb(206, 201, 201);
+            display: flex;
+            height: 100%;
+
+        }
+
+        article {
+            width: 70%;
+            height: 100%;
+        }
+
+        #box {
+            position: relative;
+        }
+
+        #nav {
+            position: absolute;
+            background-color: white;
+            margin: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            flex-shrink: 2;
+        }
+
+        #nav table {
+
+            display: inline-block;
+        }
+
+        #nav td {
+            padding: 5px 20px;
+        }
+
+        #nav td:not(:last-child) {
+            border-right: 1px solid grey;
+
+        }
+
+        #edu_list {
+            top: 100px;
+            margin: 50px;
+            background-color: white;
+            position: relative;
+            height: 80%;
+            overflow: scroll;
+            border-radius: 15px;
+        }
+
+        #edu_list tr {
+            margin-bottom: 10px;
+        }
+
+        #edu_list th {
+            padding: 30px 120px;
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+
+        .img_size {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <aside>
+        <div="box">
+            <div id="nav">
+                <table>
+                    <tr>
+                        <td>지역</td>
+                        <td>과목</td>
+                        <td>나이</td>
+                        <td>수강료</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="edu_list">
+                <div>
+                    <table>
+                        <tr>
+                            <th>xx학원</th>
+                        </tr>
+                        <tr>
+                            <th>yy학원</th>
+                        </tr>
+                        <tr>
+                            <th>zz학원</th>
+                        </tr>
+                        <tr>
+                            <th>xy학원</th>
+                        </tr>
+                        <tr>
+                            <th>yz학원</th>
+                        </tr>
+                        <tr>
+                            <th>zx학원</th>
+                        </tr>
+                        <tr>
+                            <th>xz학원</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            </div>
+    </aside>
+
+    <article>
+        <img src="naver_map.png" class="image_size">
+    </article>
+
+</body>
+
+</html>
