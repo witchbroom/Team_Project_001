@@ -17,6 +17,8 @@
             display: flex;
             width: 100vw;
             height: 100vh;
+            overflow-x: hidden;
+            overflow-y: hidden;
         }
 
         aside {
@@ -37,8 +39,9 @@
 
         #nav {
             position: absolute;
+            top: 40px;
+            left: 20px;
             background-color: white;
-            margin: 50px;
             border-radius: 30px;
             display: flex;
             justify-content: center;
@@ -53,12 +56,24 @@
         }
 
         #nav td {
-            padding: 5px 20px;
+            padding: 5px 10px;
         }
 
         #nav td:not(:last-child) {
             border-right: 1px solid grey;
 
+        }
+
+        #nav input {
+            width: 70px;
+            height: 30px;
+            border: none;
+            text-align: center;
+        }
+
+        #nav input::placeholder {
+            text-align: center;
+            font-weight: 600;
         }
 
         #edu_list {
@@ -69,6 +84,7 @@
             height: 80%;
             overflow: scroll;
             border-radius: 15px;
+            overflow-x: hidden;
         }
 
         #edu_list tr {
@@ -95,16 +111,37 @@
             <div id="nav">
                 <table>
                     <tr>
-                        <td>지역</td>
-                        <td>과목</td>
-                        <td>나이</td>
-                        <td>수강료</td>
+                        <td><input type="text" placeholder="지역"></td>
+                        <td><input type="text" placeholder="과목"></td>
+                        <td><input type="text" placeholder="나이"></td>
+                        <td><input type="text" placeholder="수강료"></td>
                     </tr>
                 </table>
             </div>
             <div id="edu_list">
                 <div>
                     <table>
+                        <tr>
+                            <th>xx학원</th>
+                        </tr>
+                        <tr>
+                            <th>yy학원</th>
+                        </tr>
+                        <tr>
+                            <th>zz학원</th>
+                        </tr>
+                        <tr>
+                            <th>xy학원</th>
+                        </tr>
+                        <tr>
+                            <th>yz학원</th>
+                        </tr>
+                        <tr>
+                            <th>zx학원</th>
+                        </tr>
+                        <tr>
+                            <th>xz학원</th>
+                        </tr>
                         <tr>
                             <th>xx학원</th>
                         </tr>
